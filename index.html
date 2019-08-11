@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tricom Travellers</title>
+</head>
+<body>
+
+    <div class="top">
+            <header>
+                    <nav>
+                        <ul>
+                          <img  src="data:image/png;base64,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" alt="logo">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="#services">OUR SERVICES</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="center">
+                  <h1>Tricom Travellers Promoting Cultural Tourism</h1>
+                <div class="welcome">Welcome to kenya</div>
+                </div>
+    </div>
+
+    <div id="about" class="aboutus"><h1>About Us</h1>
+      <div class="innerAbout">
+        <p>We are a travellers company that help the local citizens and the foreigners to travel across the country to visit different tourists attraction sites. Some of the parks are Amboseli, Tsavo, Masai mara among others. Mountains like Mt. Kenya and other beautiful scenaries in the country. Fill free to contact us and book with us.</p>
+       <h3><strong>Our Mission</strong></h3>
+       <p>We are a team that creates unique and socially responsible travel experiences, providing services beyond expectations.</p>
+        <h3><strong>Our Vision</strong></h3>
+<p>To strengthen our position as the leading transport company providing quality, creative, innovative, competitive and socially responsible services in the region.</p>
+</div>
+</div>
+
+<div id="services" class="serve">
+    <h1 style="text-align:center;">Our Services</h1>
+  <div class="one"><h3>Booking Services</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmloCq84CcgXh7cIUbW5uJdq5EFeoWkSUGcuzzdBzwsFIiXpYJ" alt="Booking">
+<p>Our offices are open for booking 24/7. We are located in different locations in the country fell free to contac us any time any day.Travel takes a lot of preparation, which means most people are turning to the web to make informed decisions about where and how to travel. Let’s seize the opportunity and connect with potential travelers as they dream and plan, while also providing straightforward functionality and content when booking and exploring—across devices and channels.</p>
+  </div>
+  <div class="one"><h3>Transportation</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUSG7hEteB6YkB5YrhEFTSAjcaSX3vlQ8xCmRVlTN6d8K6Z4z-" alt="Transport">
+<p>We have qualified drivers and lincensed vehicles that we use to take our clients around the country too the beautiful scenes of their choice. Book and enjoy the comfortability of our cars.Whether you’re on a collaborative tourism board or are simply a business that relies on guests from out of town, there’s no template or one-size-fits-all solution for your unique needs. In fact, the majority of travelers admit to searching for the most relevant information regardless of the travel company providing the content—that it is to say, they’re more loyal to their own needs than to any particular brand.his means that, as a destination marketer, you have to earn (and re-earn) your audience’s consideration at every stage of the buying cycle and on every device. Gravitate understands the needs of travel marketers and identifies key touchpoints throughout the cycle, connects trip planners to the answers they’re searching for, and ultimately, highlights your destination in the best possible light.</p>
+  </div>
+  <div class="one"><h3>Accomodation</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5nm-W0njEgANDgOke502Fxy2icUB_4q3ZCCc8-0sKtfaULu2HFg" alt="Accomodation" >
+<p>We offer accomodation to the travelling tourists in different locations of tourism. For those who are willing to stay for some days there. We have beautiful hotels around the country for our clients.s grand in many ways, and the décor and stately gardens make a statement from the minute you walk in. It is discreet enough for couples but still family friendly. The services are personalized, with luxury guaranteed at every turn, from the furnishings to the ambiance. The food is always masterfully made by the property’s Le Cordon Bleu chefs, who use the freshest ingredients. Each meal is accompanied by exceptional pairings with international wines and sherries or port to cap off the evening.</p>
+  </div>
+</div>
+
+<div>
+  <h1 style="text-align:center;">Where To Go</h1>
+  <div class="disc">
+      <div>
+        <h3>Maasai Mara National Reserve</h3>
+        <img src="https://www.planetware.com/photos-large/KEN/kenya-Maasai-mara.jpg" alt="">
+      </div>
+      <div>
+        <h3>Amboseli National Reserve</h3>
+        <img src="https://www.planetware.com/photos-large/KEN/kenya-amboseli.jpg" alt="">
+      </div>
+      <div>
+        <h3>Tsavo National Park</h3>
+        <img src="https://www.planetware.com/photos-large/KEN/kenya-tsavo-national-park.jpg" alt="">
+      </div>
+      <div>
+          <h3>Lake Nakuru National Park</h3>
+          <img src="https://www.planetware.com/photos-large/KEN/kenya-lake-nakuru-national-park.jpg" alt="">
+      </div>
+      <div>
+          <h3>Lamu Island</h3>
+          <img src="https://www.planetware.com/photos-large/KEN/kenya-lamu.jpg" alt="">
+      </div>
+      <div>
+          <h3>Mount Kenya National Park</h3>
+          <img src="https://www.planetware.com/photos-large/KEN/kenya-mount-kenya-national-park.jpg" alt="">
+      </div>
+      <div>
+          <h3>Hell's Gate National Park</h3>
+          <img src="https://www.planetware.com/photos-large/KEN/kenya-hells-gate-national-park.jpg" alt="">
+      </div>
+  </div>
+  
+</div>
+
+<div class="ourteam">
+  <h1 style="text-align:center">Meet Our Team</h1>
+  <div class="us">
+  <div class="two"><img src="https://themescompany.com/wp-content/uploads/2012/02/Time-Lapse-Face.jpg" alt="Kim Jade">
+    <h4>Kim Jade</h4>
+    <h5>Chief Executve Office(CEO)</h5>
+  </div>
+  <div class="two">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBY5uRA_AafyBwJJLUNEfEq_P45ISBbvqCdssmd0_Xt_ATUd-n" alt="Marketing Maneger">
+    <h4>Jeff Brussels</h4>
+    <h5>Human Resource Manager (HRM)</h5>
+  </div>
+  <div class="two">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlxjz8fzY7-ykSt_56FqSiIEP5zifce_pilHedt7Ia2Kf5Ff-3Ag" alt="Customer service">
+    <h4>Mary Chebet</h4>
+    <h5>Customer Services</h5>
+  </div>
+  </div>
+</div>
+
+    <div ><h1 style="text-align:center">Our Clients views</h1>
+        
+        <table class="custab">
+            <tr><th><strong>Clients</strong></th>
+                <th><strong>What they say</strong></th>
+            </tr>
+            <tr><td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTfgI_K5r0NKazvpDuWh_JlmDPurr9Vq7MC7c0xKQzmr88aUkQ6g" style="border-radius:50%"></td>
+                <td>Amazing company for transport and accomodation</td>
+            
+           </tr>
+           <tr><td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTfgI_K5r0NKazvpDuWh_JlmDPurr9Vq7MC7c0xKQzmr88aUkQ6g" style="border-radius:50%"></td>
+            <td>Your services are amazing</td>
+            
+            </tr>
+            
+        </table>
+    </div>
+    <div id="contact"><h1 style="text-align:center;">Contact Us</h1>
+        <div class="feedback">
+            <form >
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+    </div>
+    
+    
+    <footer class="closing">
+        <h2 style="text-align:center">Find us on:</h2>
+       <div class="down">
+          <p>Tricom travellers,</p>
+          <p>4th Floor,</p>
+          <p>42000-3030303</p>
+          <p>Nairobi-Kenya</p>
+</div>
+<div>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+</div>
+       
+            
+          
+       
+ </footer>
+ 
+    
+</body>
+</html>
